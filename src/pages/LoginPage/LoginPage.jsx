@@ -15,10 +15,11 @@ export default function LoginPage({loginUser}) {
 		console.log(evt.target);
 	}
   return (
-    <>
-			<h1>LoginPage</h1>
+    <div className="login">
+			<h2>Please enter your desired username below</h2>
 			<form onSubmit={handleAddUser}>
 				<label >
+					Username
 					<input
 						name="username"
 						onChange={handleChange}
@@ -26,8 +27,8 @@ export default function LoginPage({loginUser}) {
 						type="text"						
 					/>
 				</label>
-				<button >Login</button>
+				<button >Sign In</button>
 			</form>
-    </>
+    </div>
   )
 }
