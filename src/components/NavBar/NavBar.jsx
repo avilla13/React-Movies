@@ -1,6 +1,11 @@
+import { Link } from "react-router-dom"
 
 export default function NavBar() {
   return (
-    <div>NavBar</div>
+    <nav>
+        <Link to="/">Movies</Link>
+        &nbsp; | &nbsp;
+        <Link to="/actors">Actors</Link>
+    </nav>
   )
 }
