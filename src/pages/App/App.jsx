@@ -7,7 +7,7 @@ import MovieDetailPage from '../MovieDetailPage/MovieDetailPage';
 import ActorsListPage from '../ActorsListPage/ActorsListPage';
 import './App.css';
 
-function App() {
+export default function App() {
   const [user, setUser] = useState(null);
 
   function loginUser(user) {
@@ -18,7 +18,7 @@ function App() {
     <main className="App">
       { user ?
         <>
-          <NavBar />
+          <NavBar user={user} />
           <Routes>
             <Route path="/" element={<MoviesListPage />} />
             <Route path="/movies/:movieName" element={<MovieDetailPage />} />
@@ -31,5 +31,3 @@ function App() {
     </main>
   );
 }
-
-export default App;

@@ -7,9 +7,9 @@ export default function LoginPage({loginUser}) {
 
   function handleAddUser(evt) {
     evt.preventDefault();
-    loginUser(newUser);
-    // setNewUser('');
+    loginUser(newUser);    
   }
+	
 	function handleChange(evt){
 		setNewUser({...newUser, [evt.target.name]: evt.target.value})
 		console.log(evt.target);

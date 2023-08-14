@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom"
 
-export default function NavBar() {
+export default function NavBar({ user }) {
   return (
-    <nav>
-        <Link to="/">Movies</Link>
-        &nbsp; | &nbsp;
-        <Link to="/actors">Actors</Link>
+    <nav className="navbar">
+      <div className="navbar-menu">
+        <ul className="navbar-items">
+          <li>
+            <Link to="/" >Movies</Link>
+          </li>
+          <li>
+            <Link to="/actors" >Actors</Link>
+          </li>
+          <p>Welcome, {user.username}!</p>
+        </ul>        
+      </div>
     </nav>
   )
 }
