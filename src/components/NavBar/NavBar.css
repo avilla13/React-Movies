@@ -1,0 +1,31 @@
+.navbar {
+    padding: 10px 0;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;        
+}
+.navbar-items {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navbar-items li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.navbar-items li a:hover {
+    background-color: white;
+    color: black;
+}

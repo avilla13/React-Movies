@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import './NavBar.css';
 
 export default function NavBar({ user }) {
   return (
@@ -10,9 +11,9 @@ export default function NavBar({ user }) {
           </li>
           <li>
             <Link to="/actors" >Actors</Link>
-          </li>
-          <p>Welcome, {user.username}!</p>
+          </li>          
         </ul>        
+        <p>Welcome, {user.username}!</p>          
       </div>
     </nav>
   )
