@@ -1,4 +1,5 @@
 import { useState } from "react"
+import './LoginPage.css';
 
 export default function LoginPage({loginUser}) {
   const [newUser, setNewUser] = useState({
@@ -16,10 +17,10 @@ export default function LoginPage({loginUser}) {
 	}
   return (
     <div className="login">
-			<h2>Please enter your desired username below</h2>
-			<form onSubmit={handleAddUser}>
+			<form onSubmit={handleAddUser} className="login-form">
+				<h2>Please enter your desired username below</h2>
 				<label >
-					Username
+					<h4>Username: </h4>
 					<input
 						name="username"
 						onChange={handleChange}
