@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import './MovieCard.css';
 
 export default function MovieCard({movie}) {
     const title = movie.title;
@@ -6,9 +7,9 @@ export default function MovieCard({movie}) {
     return (
         <Link to={`/movies/${title}`} >
             <div className="movie-card" style={{ backgroundImage: `url(${movie.posterPath})` }}>
-                <div>
-                    <h3>{title}</h3><br />
-                    {movie.releaseDate}
+                <div className="movie-info">
+                    <h2>{title}</h2>
+                    <h4>{movie.releaseDate}</h4>
                 </div>
             </div>            
         </Link>

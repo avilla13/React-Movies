@@ -1,0 +1,23 @@
+.movie-card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    height: 300px;
+    justify-content: end;
+    align-items: center;
+    padding: 8px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 2vmin;
+    text-transform: none;
+}
+.movie-info {
+    width: -webkit-fill-available;
+    background-color: rgba(160, 3, 3, 0.5);
+    padding: 6px;
+    border-radius: 3vmin;
+}
+
