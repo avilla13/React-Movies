@@ -6,9 +6,8 @@ export default function MovieDetailPage({movies}) {
   const movie = movies.find((movie) => movie.title === movieName);
   
   return (
-    <div >
-      <h1>Movie Detail Page</h1>
-      <div className="detail-grid">
+    <div className="movie-page">
+      <div className="detail-area">
         <div className="movie-details">
           <h1>{movie.title}</h1>
           <h3>Released: {movie.releaseDate}</h3>

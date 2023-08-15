@@ -1,6 +1,23 @@
-.detail-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 0 3vmin;
+.movie-page {
+    width: 100%;
+    margin: 2vmin;
+}
+.detail-area {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin: 3vmin;
+}
+.movie-details {
+    margin: 0 10vmin 0 5vmin;
+    display: block;
+}
+.movie-details > ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.movie-details > li{
+    position: relative;
+    padding-left: 0;
 }
