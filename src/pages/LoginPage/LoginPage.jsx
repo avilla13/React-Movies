@@ -17,19 +17,19 @@ export default function LoginPage({loginUser}) {
 	}
   return (
     <div className="login">
-			<form onSubmit={handleAddUser} className="login-form">
-				<h2>Please enter your desired username below</h2>
-				<label >
-					<h4>Username: </h4>
-					<input
-						name="username"
-						onChange={handleChange}
-						value={newUser.username}						
-						type="text"						
-					/>
-				</label>
-				<button >Sign In</button>
-			</form>
+      <form onSubmit={handleAddUser} className="login-form">
+        <h2>Please enter your desired username below</h2>
+        <label >
+          <h4>Username: </h4>
+          <input
+            name="username"
+            onChange={handleChange}
+            value={newUser.username}						
+            type="text"						
+          />
+        </label>
+        <button >Sign In</button>
+      </form>
     </div>
   )
 }
