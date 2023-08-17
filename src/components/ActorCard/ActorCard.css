@@ -1,0 +1,21 @@
+.actor-card {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    max-width: 20vmin;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    border: 1px solid gray;
+    border-radius: 2vmin;
+    text-transform: none;
+}
+.actor-info {
+    width: -webkit-fill-available;
+    background-color: rgba(160, 3, 3, 0.1);
+}

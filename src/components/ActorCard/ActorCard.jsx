@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-// import './ActorCard.css';
+import './ActorCard.css';
 
 export default function ActorCard({actor}) {
     

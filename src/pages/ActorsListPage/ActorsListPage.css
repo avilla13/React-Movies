@@ -1,0 +1,8 @@
+.actors-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-left: 3vmin;
+    margin-right: 3vmin;
+    
+}
