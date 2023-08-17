@@ -1,6 +1,7 @@
 .movie-page {
     width: 100%;
     margin: 2vmin;
+    color: yellow;
 }
 .detail-area {
     display: flex;
